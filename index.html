@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- jquery script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- handlebar script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.2/handlebars.js" integrity="sha256-N5vR06TQIR+YD8oS0yndB1pu/EITeijW52dwezEq7/g=" crossorigin="anonymous"></script>
+  <!-- mio script -->
+  <script src="js/script.js" charset="utf-8"></script>
+  <!-- mio style -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>ToDoLean</title>
+</head>
+
+<body>
+  <input id="add-todo" type="text" value="" placeholder="aggiungi alla lista">
+  <button id="send-todo" type="button" name="button">Invia</button>
+  <ol class="todolist">
+
+  </ol>
+  <script id="entry-template" type="text/x-handlebars-template">
+    <li class="flex todo-elmnt" data-id={{id}}>
+    {{text}}
+    <div class="delete">
+      X
+    </div>
+  </li>
+  </script>
+</body>
+
+</html>

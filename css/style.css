@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+.todo-elmnt {
+  justify-content: space-between;
+  background-color: crimson;
+  margin-top: 10px;
+  padding: 10px;
+}
